@@ -68,7 +68,7 @@ export function Home() {
                 <Link to="/episode/2025-2026" className="transition hover:text-beige-300">Finale</Link>
               </div>
             </div>
-            <AudioControl />
+            
           </nav>
 
           <div className="relative z-10 grid min-h-[calc(92vh-96px)] items-center gap-12 pb-28 pt-10 lg:grid-cols-[minmax(0,1fr)_28rem]">

@@ -7,6 +7,7 @@ import { SeasonPage } from './pages/SeasonPage'
 import { PageShell } from './components/PageShell'
 import { CinematicLoader } from './components/CinematicLoader'
 import { ScrollToTop } from './components/ScrollToTop'
+import { AudioControl } from './components/AudioControl'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -61,10 +62,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <AnimatePresence>{loading ? <CinematicLoader /> : null}</AnimatePresence>
-      <AnimatedRoutes />
-    </BrowserRouter>
+  <AudioControl />
+
+  <ScrollToTop />
+
+  <AnimatePresence>
+    {loading ? <CinematicLoader /> : null}
+  </AnimatePresence>
+
+  <AnimatedRoutes />
+</BrowserRouter>
   )
 }
 
